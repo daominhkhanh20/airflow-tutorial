@@ -1,0 +1,1607 @@
+[2022-12-31T20:11:56.262+0700] {processor.py:153} INFO - Started process (PID=146827) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:11:56.262+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:11:56.263+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:11:56.263+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:11:56.270+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:11:56.268+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/envs/airflow/lib/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 965, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache'
+[2022-12-31T20:11:56.270+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:11:56.286+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.029 seconds
+[2022-12-31T20:36:15.842+0700] {processor.py:153} INFO - Started process (PID=155258) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:36:15.846+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:36:15.847+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:36:15.847+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:36:15.856+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:36:15.854+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache'
+[2022-12-31T20:36:15.857+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:36:15.875+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.035 seconds
+[2022-12-31T20:47:10.148+0700] {processor.py:153} INFO - Started process (PID=7095) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:47:10.152+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:47:10.152+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:47:10.152+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:47:10.160+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:47:10.158+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache'
+[2022-12-31T20:47:10.160+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:47:10.176+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.030 seconds
+[2022-12-31T20:54:33.944+0700] {processor.py:153} INFO - Started process (PID=11701) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:54:33.945+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:54:33.945+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:54:33.945+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:54:33.955+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:54:33.954+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T20:54:33.956+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:54:33.972+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.031 seconds
+[2022-12-31T20:55:30.576+0700] {processor.py:153} INFO - Started process (PID=12008) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:55:30.579+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:55:30.580+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:55:30.580+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:55:30.593+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:55:30.591+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T20:55:30.593+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:55:30.612+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.038 seconds
+[2022-12-31T20:55:49.580+0700] {processor.py:153} INFO - Started process (PID=12093) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:55:49.581+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:55:49.581+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:55:49.581+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:55:49.591+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:55:49.590+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T20:55:49.591+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:55:49.607+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.029 seconds
+[2022-12-31T20:56:13.225+0700] {processor.py:153} INFO - Started process (PID=12178) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:56:13.229+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:56:13.229+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:56:13.229+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:56:13.239+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:56:13.238+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T20:56:13.240+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:56:13.260+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.037 seconds
+[2022-12-31T20:56:39.893+0700] {processor.py:153} INFO - Started process (PID=12257) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:56:39.894+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:56:39.895+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:56:39.895+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:56:39.908+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:56:39.907+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T20:56:39.909+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:56:39.938+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.051 seconds
+[2022-12-31T20:57:16.508+0700] {processor.py:153} INFO - Started process (PID=12466) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:57:16.512+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:57:16.513+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:57:16.512+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:57:16.522+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:57:16.521+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T20:57:16.523+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:57:16.538+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.032 seconds
+[2022-12-31T20:57:44.053+0700] {processor.py:153} INFO - Started process (PID=12704) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:57:44.054+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:57:44.055+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:57:44.055+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:57:44.067+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:57:44.066+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T20:57:44.068+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:57:44.090+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.041 seconds
+[2022-12-31T20:58:09.392+0700] {processor.py:153} INFO - Started process (PID=12837) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:58:09.396+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:58:09.397+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:58:09.396+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:58:09.406+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:58:09.405+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T20:58:09.406+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:58:09.516+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.126 seconds
+[2022-12-31T20:58:34.458+0700] {processor.py:153} INFO - Started process (PID=12963) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:58:34.459+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:58:34.460+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:58:34.460+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:58:34.564+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:58:34.563+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T20:58:34.564+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:58:34.580+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.125 seconds
+[2022-12-31T20:59:00.703+0700] {processor.py:153} INFO - Started process (PID=13087) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:59:00.706+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:59:00.707+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:59:00.707+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:59:00.718+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:59:00.716+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T20:59:00.718+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:59:00.736+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.038 seconds
+[2022-12-31T20:59:25.274+0700] {processor.py:153} INFO - Started process (PID=13996) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:59:25.275+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:59:25.276+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:59:25.276+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:59:25.286+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:59:25.285+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T20:59:25.286+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:59:25.304+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.033 seconds
+[2022-12-31T20:59:47.268+0700] {processor.py:153} INFO - Started process (PID=14244) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:59:47.272+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T20:59:47.275+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:59:47.274+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:59:47.288+0700] {logging_mixin.py:137} INFO - [2022-12-31T20:59:47.286+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T20:59:47.289+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T20:59:47.312+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.048 seconds
+[2022-12-31T21:00:18.774+0700] {processor.py:153} INFO - Started process (PID=15092) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:00:18.776+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:00:18.777+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:00:18.777+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:00:18.784+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:00:18.783+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:00:18.785+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:00:18.800+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.029 seconds
+[2022-12-31T21:00:45.181+0700] {processor.py:153} INFO - Started process (PID=15447) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:00:45.182+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:00:45.183+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:00:45.182+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:00:45.190+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:00:45.189+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:00:45.191+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:00:45.205+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.026 seconds
+[2022-12-31T21:01:04.924+0700] {processor.py:153} INFO - Started process (PID=15739) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:01:04.929+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:01:04.931+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:01:04.930+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:01:04.953+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:01:04.952+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:01:04.954+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:01:04.972+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.050 seconds
+[2022-12-31T21:01:21.736+0700] {processor.py:153} INFO - Started process (PID=16037) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:01:21.737+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:01:21.738+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:01:21.738+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:01:21.750+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:01:21.748+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:01:21.750+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:01:21.765+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.032 seconds
+[2022-12-31T21:01:40.867+0700] {processor.py:153} INFO - Started process (PID=16226) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:01:40.871+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:01:40.871+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:01:40.871+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:01:40.879+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:01:40.878+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:01:40.879+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:01:40.896+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.031 seconds
+[2022-12-31T21:01:57.315+0700] {processor.py:153} INFO - Started process (PID=16269) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:01:57.317+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:01:57.318+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:01:57.318+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:01:57.331+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:01:57.330+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:01:57.332+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:01:57.349+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.042 seconds
+[2022-12-31T21:02:14.848+0700] {processor.py:153} INFO - Started process (PID=16297) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:02:14.849+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:02:14.849+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:02:14.849+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:02:14.857+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:02:14.856+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:02:14.857+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:02:14.872+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.026 seconds
+[2022-12-31T21:02:33.227+0700] {processor.py:153} INFO - Started process (PID=16339) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:02:33.230+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:02:33.231+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:02:33.231+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:02:33.246+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:02:33.245+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:02:33.246+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:02:33.263+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.039 seconds
+[2022-12-31T21:02:51.181+0700] {processor.py:153} INFO - Started process (PID=16476) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:02:51.183+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:02:51.186+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:02:51.185+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:02:51.208+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:02:51.206+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:02:51.208+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:02:51.232+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.060 seconds
+[2022-12-31T21:03:23.434+0700] {processor.py:153} INFO - Started process (PID=16830) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:03:23.435+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:03:23.435+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:03:23.435+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:03:23.444+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:03:23.443+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:03:23.445+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:03:23.459+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.028 seconds
+[2022-12-31T21:04:15.388+0700] {processor.py:153} INFO - Started process (PID=17103) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:04:15.392+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:04:15.394+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:04:15.393+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:04:15.404+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:04:15.403+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:04:15.405+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:04:15.424+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.040 seconds
+[2022-12-31T21:04:39.515+0700] {processor.py:153} INFO - Started process (PID=17537) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:04:39.517+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:04:39.520+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:04:39.519+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:04:39.539+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:04:39.537+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:04:39.539+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:04:39.559+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.053 seconds
+[2022-12-31T21:05:06.232+0700] {processor.py:153} INFO - Started process (PID=17851) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:05:06.236+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:05:06.237+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:05:06.237+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:05:06.248+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:05:06.247+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:05:06.249+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:05:06.264+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.036 seconds
+[2022-12-31T21:05:31.358+0700] {processor.py:153} INFO - Started process (PID=18256) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:05:31.360+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:05:31.362+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:05:31.361+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:05:31.377+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:05:31.375+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:05:31.377+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:05:31.394+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.044 seconds
+[2022-12-31T21:05:55.271+0700] {processor.py:153} INFO - Started process (PID=18375) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:05:55.273+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:05:55.274+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:05:55.274+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:05:55.282+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:05:55.282+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:05:55.283+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:05:55.298+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.029 seconds
+[2022-12-31T21:06:29.658+0700] {processor.py:153} INFO - Started process (PID=18459) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:06:29.660+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:06:29.660+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:06:29.660+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:06:29.667+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:06:29.667+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:06:29.668+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:06:29.682+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.026 seconds
+[2022-12-31T21:07:00.098+0700] {processor.py:153} INFO - Started process (PID=18535) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:07:00.100+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:07:00.102+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:07:00.101+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:07:00.118+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:07:00.116+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:07:00.118+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:07:00.135+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.044 seconds
+[2022-12-31T21:07:21.111+0700] {processor.py:153} INFO - Started process (PID=18658) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:07:21.115+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:07:21.116+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:07:21.116+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:07:21.125+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:07:21.123+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:07:21.125+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:07:21.143+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.034 seconds
+[2022-12-31T21:07:45.126+0700] {processor.py:153} INFO - Started process (PID=18729) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:07:45.130+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:07:45.134+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:07:45.133+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:07:45.158+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:07:45.156+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:07:45.158+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:07:45.181+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.068 seconds
+[2022-12-31T21:08:07.609+0700] {processor.py:153} INFO - Started process (PID=18791) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:08:07.614+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:08:07.615+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:08:07.614+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:08:07.743+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:08:07.742+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:08:07.744+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:08:07.760+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.158 seconds
+[2022-12-31T21:08:34.052+0700] {processor.py:153} INFO - Started process (PID=18916) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:08:34.052+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:08:34.053+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:08:34.053+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:08:34.061+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:08:34.060+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:08:34.062+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:08:34.082+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.034 seconds
+[2022-12-31T21:08:58.836+0700] {processor.py:153} INFO - Started process (PID=19195) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:08:58.840+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:08:58.841+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:08:58.841+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:08:58.851+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:08:58.850+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:08:58.851+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:08:58.868+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.036 seconds
+[2022-12-31T21:09:24.690+0700] {processor.py:153} INFO - Started process (PID=19727) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:09:24.691+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:09:24.691+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:09:24.691+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:09:24.699+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:09:24.698+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:09:24.699+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:09:24.714+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.026 seconds
+[2022-12-31T21:09:50.620+0700] {processor.py:153} INFO - Started process (PID=19848) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:09:50.624+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:09:50.624+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:09:50.624+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:09:50.632+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:09:50.631+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:09:50.633+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:09:50.652+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.036 seconds
+[2022-12-31T21:10:06.313+0700] {processor.py:153} INFO - Started process (PID=19871) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:10:06.314+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:10:06.315+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:10:06.315+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:10:06.323+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:10:06.322+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:10:06.323+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:10:06.339+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.028 seconds
+[2022-12-31T21:10:23.102+0700] {processor.py:153} INFO - Started process (PID=19906) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:10:23.104+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:10:23.105+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:10:23.105+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:10:23.119+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:10:23.118+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:10:23.119+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:10:23.138+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.039 seconds
+[2022-12-31T21:10:40.182+0700] {processor.py:153} INFO - Started process (PID=20072) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:10:40.183+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:10:40.183+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:10:40.183+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:10:40.197+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:10:40.196+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:10:40.198+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:10:40.215+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.037 seconds
+[2022-12-31T21:10:56.618+0700] {processor.py:153} INFO - Started process (PID=20146) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:10:56.619+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:10:56.619+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:10:56.619+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:10:56.627+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:10:56.626+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:10:56.628+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:10:56.643+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.027 seconds
+[2022-12-31T21:11:13.234+0700] {processor.py:153} INFO - Started process (PID=20181) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:11:13.237+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:11:13.238+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:11:13.238+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:11:13.258+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:11:13.256+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:11:13.259+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:11:13.277+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.049 seconds
+[2022-12-31T21:11:30.261+0700] {processor.py:153} INFO - Started process (PID=20213) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:11:30.262+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:11:30.262+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:11:30.262+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:11:30.269+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:11:30.268+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:11:30.270+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:11:30.285+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.026 seconds
+[2022-12-31T21:11:48.028+0700] {processor.py:153} INFO - Started process (PID=20302) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:11:48.032+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:11:48.034+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:11:48.034+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:11:48.062+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:11:48.060+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:11:48.077+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:11:48.097+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.093 seconds
+[2022-12-31T21:12:15.749+0700] {processor.py:153} INFO - Started process (PID=20385) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:12:15.751+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:12:15.752+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:12:15.752+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:12:15.765+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:12:15.764+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:12:15.766+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:12:15.782+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.044 seconds
+[2022-12-31T21:12:45.549+0700] {processor.py:153} INFO - Started process (PID=20469) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:12:45.552+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:12:45.554+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:12:45.554+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:12:45.571+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:12:45.570+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:12:45.572+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:12:45.589+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.048 seconds
+[2022-12-31T21:13:04.690+0700] {processor.py:153} INFO - Started process (PID=20523) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:13:04.691+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:13:04.692+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:13:04.692+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:13:04.705+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:13:04.704+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:13:04.706+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:13:04.726+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.041 seconds
+[2022-12-31T21:13:22.135+0700] {processor.py:153} INFO - Started process (PID=20604) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:13:22.139+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:13:22.140+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:13:22.140+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:13:22.150+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:13:22.149+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:13:22.150+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:13:22.167+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.035 seconds
+[2022-12-31T21:13:37.598+0700] {processor.py:153} INFO - Started process (PID=20687) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:13:37.599+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:13:37.600+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:13:37.599+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:13:37.607+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:13:37.606+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:13:37.607+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:13:37.622+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.026 seconds
+[2022-12-31T21:13:53.353+0700] {processor.py:153} INFO - Started process (PID=20714) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:13:53.354+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:13:53.356+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:13:53.355+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:13:53.371+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:13:53.369+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:13:53.371+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:13:53.389+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.044 seconds
+[2022-12-31T21:14:11.451+0700] {processor.py:153} INFO - Started process (PID=21144) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:14:11.455+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:14:11.456+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:14:11.456+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:14:11.467+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:14:11.466+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:14:11.467+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:14:11.483+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.036 seconds
+[2022-12-31T21:14:27.573+0700] {processor.py:153} INFO - Started process (PID=21551) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:14:27.574+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:14:27.574+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:14:27.574+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:14:27.582+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:14:27.581+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:14:27.582+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:14:27.597+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.026 seconds
+[2022-12-31T21:14:44.143+0700] {processor.py:153} INFO - Started process (PID=21737) to work on /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:14:44.145+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/example_twitter_dag.py for tasks to queue
+[2022-12-31T21:14:44.145+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:14:44.145+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:14:44.154+0700] {logging_mixin.py:137} INFO - [2022-12-31T21:14:44.153+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/example_twitter_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/example_twitter_dag.py", line 34, in <module>
+    from airflow.operators.hive_operator import HiveOperator
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/utils/deprecation_tools.py", line 36, in getattr_with_deprecation
+    return getattr(importlib.import_module(new_module), new_class_name)
+  File "/home/dmk/anaconda3/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 972, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'airflow.providers.apache.hive'
+[2022-12-31T21:14:44.154+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/example_twitter_dag.py
+[2022-12-31T21:14:44.169+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/example_twitter_dag.py took 0.030 seconds

@@ -1,0 +1,41 @@
+[2022-12-31T21:03:06.063+0700] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: test.sleep scheduled__2022-12-31T14:00:00+00:00 [queued]>
+[2022-12-31T21:03:06.069+0700] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: test.sleep scheduled__2022-12-31T14:00:00+00:00 [queued]>
+[2022-12-31T21:03:06.069+0700] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-31T21:03:06.069+0700] {taskinstance.py:1284} INFO - Starting attempt 1 of 4
+[2022-12-31T21:03:06.069+0700] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-31T21:03:06.081+0700] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): sleep> on 2022-12-31 14:00:00+00:00
+[2022-12-31T21:03:06.084+0700] {standard_task_runner.py:55} INFO - Started process 16671 to run task
+[2022-12-31T21:03:06.087+0700] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'test', 'sleep', 'scheduled__2022-12-31T14:00:00+00:00', '--job-id', '144', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmpakr5aobi']
+[2022-12-31T21:03:06.088+0700] {standard_task_runner.py:83} INFO - Job 144: Subtask sleep
+[2022-12-31T21:03:06.128+0700] {task_command.py:389} INFO - Running <TaskInstance: test.sleep scheduled__2022-12-31T14:00:00+00:00 [running]> on host daominhkhanh
+[2022-12-31T21:03:06.176+0700] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=airflow@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=test
+AIRFLOW_CTX_TASK_ID=sleep
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-31T14:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-31T14:00:00+00:00
+[2022-12-31T21:03:06.177+0700] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-31T21:03:06.177+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'sleep 5']
+[2022-12-31T21:03:06.183+0700] {subprocess.py:86} INFO - Output:
+[2022-12-31T21:03:10.568+0700] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 16671. PIDs of all processes in the group: [16672, 16671]
+[2022-12-31T21:03:10.568+0700] {process_utils.py:84} INFO - Sending the signal Signals.SIGTERM to group 16671
+[2022-12-31T21:03:10.569+0700] {taskinstance.py:1483} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-12-31T21:03:10.569+0700] {subprocess.py:104} INFO - Sending SIGTERM signal to process group
+[2022-12-31T21:03:10.581+0700] {taskinstance.py:1772} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/operators/bash.py", line 187, in execute
+    result = self.subprocess_hook.run_command(
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/hooks/subprocess.py", line 91, in run_command
+    for raw_line in iter(self.sub_process.stdout.readline, b""):
+  File "/home/dmk/anaconda3/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 1485, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-12-31T21:03:10.591+0700] {taskinstance.py:1322} INFO - Marking task as UP_FOR_RETRY. dag_id=test, task_id=sleep, execution_date=20221231T140000, start_date=20221231T140306, end_date=20221231T140310
+[2022-12-31T21:03:10.608+0700] {standard_task_runner.py:100} ERROR - Failed to execute job 144 for task sleep (Task received SIGTERM signal; 16671)
+[2022-12-31T21:03:10.621+0700] {process_utils.py:79} INFO - Process psutil.Process(pid=16671, status='terminated', exitcode=1, started='21:03:06') (16671) terminated with exit code 1
+[2022-12-31T21:03:10.622+0700] {process_utils.py:79} INFO - Process psutil.Process(pid=16672, status='terminated', started='21:03:06') (16672) terminated with exit code None

@@ -1,0 +1,41 @@
+[2022-12-31T22:30:01.332+0700] {processor.py:153} INFO - Started process (PID=51289) to work on /home/dmk/airflow/dags/variable_dag.py
+[2022-12-31T22:30:01.332+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/variable_dag.py for tasks to queue
+[2022-12-31T22:30:01.333+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:30:01.333+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/variable_dag.py
+[2022-12-31T22:30:01.348+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:30:01.347+0700] {dagbag.py:343} ERROR - Failed to import: /home/dmk/airflow/dags/variable_dag.py
+Traceback (most recent call last):
+  File "/home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/dmk/airflow/dags/variable_dag.py", line 29, in <module>
+    dag_config = Variable.get("example_variables_config", deserialize_json=True)
+  File "/home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/models/variable.py", line 141, in get
+    raise KeyError(f"Variable {key} does not exist")
+KeyError: 'Variable example_variables_config does not exist'
+[2022-12-31T22:30:01.348+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/airflow/dags/variable_dag.py
+[2022-12-31T22:30:01.368+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/variable_dag.py took 0.039 seconds
+[2022-12-31T22:30:44.209+0700] {processor.py:153} INFO - Started process (PID=51594) to work on /home/dmk/airflow/dags/variable_dag.py
+[2022-12-31T22:30:44.213+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/variable_dag.py for tasks to queue
+[2022-12-31T22:30:44.215+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:30:44.215+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/variable_dag.py
+[2022-12-31T22:30:44.261+0700] {processor.py:753} INFO - DAG(s) dict_keys(['variable_dag']) retrieved from /home/dmk/airflow/dags/variable_dag.py
+[2022-12-31T22:30:44.395+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:30:44.394+0700] {manager.py:504} INFO - Created Permission View: can read on DAG:variable_dag
+[2022-12-31T22:30:44.427+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:30:44.427+0700] {manager.py:504} INFO - Created Permission View: can edit on DAG:variable_dag
+[2022-12-31T22:30:44.457+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:30:44.457+0700] {manager.py:504} INFO - Created Permission View: can delete on DAG:variable_dag
+[2022-12-31T22:30:44.458+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:30:44.458+0700] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-31T22:30:44.477+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:30:44.477+0700] {dag.py:2697} INFO - Creating ORM DAG for variable_dag
+[2022-12-31T22:30:44.492+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:30:44.492+0700] {dag.py:3427} INFO - Setting next_dagrun for variable_dag to 2019-02-15T00:00:00+00:00, run_after=2019-02-15T00:00:00+00:00
+[2022-12-31T22:30:44.561+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/variable_dag.py took 0.363 seconds
+[2022-12-31T22:31:32.503+0700] {processor.py:153} INFO - Started process (PID=51784) to work on /home/dmk/airflow/dags/variable_dag.py
+[2022-12-31T22:31:32.507+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/variable_dag.py for tasks to queue
+[2022-12-31T22:31:32.508+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:31:32.508+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/variable_dag.py
+[2022-12-31T22:31:32.538+0700] {processor.py:753} INFO - DAG(s) dict_keys(['variable_dag']) retrieved from /home/dmk/airflow/dags/variable_dag.py
+[2022-12-31T22:31:32.582+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:31:32.582+0700] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-31T22:31:32.628+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:31:32.627+0700] {dag.py:3427} INFO - Setting next_dagrun for variable_dag to 2019-02-15T00:00:00+00:00, run_after=2019-02-15T00:00:00+00:00
+[2022-12-31T22:31:32.677+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/variable_dag.py took 0.177 seconds
+[2022-12-31T22:32:21.188+0700] {processor.py:153} INFO - Started process (PID=51862) to work on /home/dmk/airflow/dags/variable_dag.py
+[2022-12-31T22:32:21.190+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/variable_dag.py for tasks to queue
+[2022-12-31T22:32:21.191+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:32:21.191+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/variable_dag.py
+[2022-12-31T22:32:21.222+0700] {processor.py:753} INFO - DAG(s) dict_keys(['variable_dag']) retrieved from /home/dmk/airflow/dags/variable_dag.py
+[2022-12-31T22:32:21.262+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:32:21.262+0700] {dag.py:2676} INFO - Sync 1 DAGs
+[2022-12-31T22:32:21.288+0700] {logging_mixin.py:137} INFO - [2022-12-31T22:32:21.288+0700] {dag.py:3427} INFO - Setting next_dagrun for variable_dag to 2019-02-15T00:00:00+00:00, run_after=2019-02-15T00:00:00+00:00
+[2022-12-31T22:32:21.372+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/variable_dag.py took 0.188 seconds

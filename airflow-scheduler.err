@@ -1,0 +1,5 @@
+[2022-12-31 21:41:50 +0700] [29700] [INFO] Starting gunicorn 20.1.0
+[2022-12-31 21:41:50 +0700] [29700] [INFO] Listening at: http://[::]:8793 (29700)
+[2022-12-31 21:41:50 +0700] [29700] [INFO] Using worker: sync
+[2022-12-31 21:41:50 +0700] [29701] [INFO] Booting worker with pid: 29701
+[2022-12-31 21:41:50 +0700] [29703] [INFO] Booting worker with pid: 29703

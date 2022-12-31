@@ -1,0 +1,43 @@
+[2022-12-31T20:50:36.977+0700] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: test.templated scheduled__2022-12-31T13:30:00+00:00 [queued]>
+[2022-12-31T20:50:36.983+0700] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: test.templated scheduled__2022-12-31T13:30:00+00:00 [queued]>
+[2022-12-31T20:50:36.984+0700] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-31T20:50:36.984+0700] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2022-12-31T20:50:36.984+0700] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-31T20:50:36.996+0700] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): templated> on 2022-12-31 13:30:00+00:00
+[2022-12-31T20:50:36.999+0700] {standard_task_runner.py:55} INFO - Started process 10378 to run task
+[2022-12-31T20:50:37.003+0700] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'test', 'templated', 'scheduled__2022-12-31T13:30:00+00:00', '--job-id', '83', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmpjy4ik453']
+[2022-12-31T20:50:37.004+0700] {standard_task_runner.py:83} INFO - Job 83: Subtask templated
+[2022-12-31T20:50:37.044+0700] {task_command.py:389} INFO - Running <TaskInstance: test.templated scheduled__2022-12-31T13:30:00+00:00 [running]> on host daominhkhanh
+[2022-12-31T20:50:37.103+0700] {taskinstance.py:1511} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=airflow@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=test
+AIRFLOW_CTX_TASK_ID=templated
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-31T13:30:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-31T13:30:00+00:00
+[2022-12-31T20:50:37.104+0700] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-31T20:50:37.105+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', '\n\n    echo "2022-12-31"\n    echo "2023-01-07"\n    echo "Parameter I passed in"\n\n    echo "2022-12-31"\n    echo "2023-01-07"\n    echo "Parameter I passed in"\n\n    echo "2022-12-31"\n    echo "2023-01-07"\n    echo "Parameter I passed in"\n\n    echo "2022-12-31"\n    echo "2023-01-07"\n    echo "Parameter I passed in"\n\n    echo "2022-12-31"\n    echo "2023-01-07"\n    echo "Parameter I passed in"\n']
+[2022-12-31T20:50:37.110+0700] {subprocess.py:86} INFO - Output:
+[2022-12-31T20:50:37.111+0700] {subprocess.py:93} INFO - 2022-12-31
+[2022-12-31T20:50:37.112+0700] {subprocess.py:93} INFO - 2023-01-07
+[2022-12-31T20:50:37.112+0700] {subprocess.py:93} INFO - Parameter I passed in
+[2022-12-31T20:50:37.112+0700] {subprocess.py:93} INFO - 2022-12-31
+[2022-12-31T20:50:37.112+0700] {subprocess.py:93} INFO - 2023-01-07
+[2022-12-31T20:50:37.112+0700] {subprocess.py:93} INFO - Parameter I passed in
+[2022-12-31T20:50:37.112+0700] {subprocess.py:93} INFO - 2022-12-31
+[2022-12-31T20:50:37.112+0700] {subprocess.py:93} INFO - 2023-01-07
+[2022-12-31T20:50:37.112+0700] {subprocess.py:93} INFO - Parameter I passed in
+[2022-12-31T20:50:37.112+0700] {subprocess.py:93} INFO - 2022-12-31
+[2022-12-31T20:50:37.112+0700] {subprocess.py:93} INFO - 2023-01-07
+[2022-12-31T20:50:37.112+0700] {subprocess.py:93} INFO - Parameter I passed in
+[2022-12-31T20:50:37.112+0700] {subprocess.py:93} INFO - 2022-12-31
+[2022-12-31T20:50:37.112+0700] {subprocess.py:93} INFO - 2023-01-07
+[2022-12-31T20:50:37.113+0700] {subprocess.py:93} INFO - Parameter I passed in
+[2022-12-31T20:50:37.113+0700] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-31T20:50:37.129+0700] {taskinstance.py:1322} INFO - Marking task as SUCCESS. dag_id=test, task_id=templated, execution_date=20221231T133000, start_date=20221231T135036, end_date=20221231T135037
+[2022-12-31T20:50:37.174+0700] {local_task_job.py:159} INFO - Task exited with return code 0
+[2022-12-31T20:50:37.188+0700] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check
