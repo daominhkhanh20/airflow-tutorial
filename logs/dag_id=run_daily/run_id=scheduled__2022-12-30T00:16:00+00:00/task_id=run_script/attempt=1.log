@@ -1,0 +1,38 @@
+[2023-01-01T11:55:28.004+0700] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: run_daily.run_script scheduled__2022-12-30T00:16:00+00:00 [queued]>
+[2023-01-01T11:55:28.012+0700] {taskinstance.py:1087} INFO - Dependencies all met for <TaskInstance: run_daily.run_script scheduled__2022-12-30T00:16:00+00:00 [queued]>
+[2023-01-01T11:55:28.012+0700] {taskinstance.py:1283} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-01T11:55:28.012+0700] {taskinstance.py:1284} INFO - Starting attempt 1 of 2
+[2023-01-01T11:55:28.012+0700] {taskinstance.py:1285} INFO - 
+--------------------------------------------------------------------------------
+[2023-01-01T11:55:28.035+0700] {taskinstance.py:1304} INFO - Executing <Task(BashOperator): run_script> on 2022-12-30 00:16:00+00:00
+[2023-01-01T11:55:28.039+0700] {standard_task_runner.py:55} INFO - Started process 95955 to run task
+[2023-01-01T11:55:28.042+0700] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'run_daily', 'run_script', 'scheduled__2022-12-30T00:16:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/run_daily.py', '--cfg-path', '/tmp/tmpv25a_0kb']
+[2023-01-01T11:55:28.043+0700] {standard_task_runner.py:83} INFO - Job 27: Subtask run_script
+[2023-01-01T11:55:28.097+0700] {task_command.py:389} INFO - Running <TaskInstance: run_daily.run_script scheduled__2022-12-30T00:16:00+00:00 [running]> on host daominhkhanh
+[2023-01-01T11:55:28.175+0700] {taskinstance.py:1513} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=airflow@example.com
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=run_daily
+AIRFLOW_CTX_TASK_ID=run_script
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-30T00:16:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-30T00:16:00+00:00
+[2023-01-01T11:55:28.176+0700] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2023-01-01T11:55:28.177+0700] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python3 /home/dmk/main.py']
+[2023-01-01T11:55:28.186+0700] {subprocess.py:86} INFO - Output:
+[2023-01-01T11:55:28.211+0700] {subprocess.py:93} INFO - 0
+[2023-01-01T11:55:28.211+0700] {subprocess.py:93} INFO - 1
+[2023-01-01T11:55:28.211+0700] {subprocess.py:93} INFO - 2
+[2023-01-01T11:55:28.211+0700] {subprocess.py:93} INFO - 3
+[2023-01-01T11:55:28.211+0700] {subprocess.py:93} INFO - 4
+[2023-01-01T11:55:28.211+0700] {subprocess.py:93} INFO - 5
+[2023-01-01T11:55:28.212+0700] {subprocess.py:93} INFO - 6
+[2023-01-01T11:55:28.212+0700] {subprocess.py:93} INFO - 7
+[2023-01-01T11:55:28.212+0700] {subprocess.py:93} INFO - 8
+[2023-01-01T11:55:28.212+0700] {subprocess.py:93} INFO - 9
+[2023-01-01T11:55:28.214+0700] {subprocess.py:97} INFO - Command exited with return code 0
+[2023-01-01T11:55:28.242+0700] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=run_daily, task_id=run_script, execution_date=20221230T001600, start_date=20230101T045528, end_date=20230101T045528
+[2023-01-01T11:55:28.294+0700] {local_task_job.py:159} INFO - Task exited with return code 0
+[2023-01-01T11:55:28.309+0700] {taskinstance.py:2582} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,10 @@
+[2023-01-01T11:53:49.983+0700] {processor.py:153} INFO - Started process (PID=95431) to work on /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py
+[2023-01-01T11:53:49.984+0700] {processor.py:743} INFO - Processing file /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-01-01T11:53:49.984+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:49.984+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py
+[2023-01-01T11:53:49.985+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py
+[2023-01-01T11:53:49.994+0700] {processor.py:175} INFO - Processing /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py took 0.013 seconds
+[2023-01-01T11:55:33.903+0700] {processor.py:153} INFO - Started process (PID=95965) to work on /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py
+[2023-01-01T11:55:33.907+0700] {processor.py:743} INFO - Processing file /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py for tasks to queue
+[2023-01-01T11:55:33.907+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:55:33.907+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py
+[2023-01-01T11:55:33.909+0700] {processor.py:755} WARNING - No viable dags retrieved from /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py
+[2023-01-01T11:55:33.917+0700] {processor.py:175} INFO - Processing /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/plugins/workday.py took 0.018 seconds

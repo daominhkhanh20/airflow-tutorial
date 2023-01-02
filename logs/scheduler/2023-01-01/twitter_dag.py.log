@@ -1,0 +1,28 @@
+[2023-01-01T11:53:45.536+0700] {processor.py:153} INFO - Started process (PID=95411) to work on /home/dmk/airflow/dags/twitter_dag.py
+[2023-01-01T11:53:45.537+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/twitter_dag.py for tasks to queue
+[2023-01-01T11:53:45.538+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:45.538+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/twitter_dag.py
+[2023-01-01T11:53:45.800+0700] {logging_mixin.py:137} WARNING - /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/providers/apache/hive/hooks/hive.py:33 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2023-01-01T11:53:45.801+0700] {logging_mixin.py:137} WARNING - /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/providers/apache/hive/hooks/hive.py:34 DeprecationWarning: The `airflow.hooks.dbapi_hook.DbApiHook` class is deprecated. Please use `'airflow.providers.common.sql.hooks.sql.DbApiHook'`.
+[2023-01-01T11:53:45.814+0700] {logging_mixin.py:137} WARNING - /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/providers/apache/hive/operators/hive.py:30 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2023-01-01T11:53:45.825+0700] {processor.py:753} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/dmk/airflow/dags/twitter_dag.py
+[2023-01-01T11:53:45.879+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:45.879+0700] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-01-01T11:53:45.900+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:45.900+0700] {dag.py:3427} INFO - Setting next_dagrun for twitter_dag to 2022-12-30T00:00:00+00:00, run_after=2022-12-31T00:00:00+00:00
+[2023-01-01T11:53:45.933+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/twitter_dag.py took 0.401 seconds
+[2023-01-01T11:55:28.664+0700] {processor.py:153} INFO - Started process (PID=95957) to work on /home/dmk/airflow/dags/twitter_dag.py
+[2023-01-01T11:55:28.667+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/twitter_dag.py for tasks to queue
+[2023-01-01T11:55:28.667+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:55:28.667+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/twitter_dag.py
+[2023-01-01T11:55:28.933+0700] {logging_mixin.py:137} WARNING - /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/providers/apache/hive/hooks/hive.py:33 DeprecationWarning: The `airflow.hooks.base_hook.BaseHook` class is deprecated. Please use `'airflow.hooks.base.BaseHook'`.
+[2023-01-01T11:55:28.933+0700] {logging_mixin.py:137} WARNING - /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/providers/apache/hive/hooks/hive.py:34 DeprecationWarning: The `airflow.hooks.dbapi_hook.DbApiHook` class is deprecated. Please use `'airflow.providers.common.sql.hooks.sql.DbApiHook'`.
+[2023-01-01T11:55:28.947+0700] {logging_mixin.py:137} WARNING - /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/providers/apache/hive/operators/hive.py:30 RemovedInAirflow3Warning: This decorator is deprecated.
+
+In previous versions, all subclasses of BaseOperator must use apply_default decorator for the `default_args` feature to work properly.
+
+In current version, it is optional. The decorator is applied automatically using the metaclass.
+[2023-01-01T11:55:28.960+0700] {processor.py:753} INFO - DAG(s) dict_keys(['twitter_dag']) retrieved from /home/dmk/airflow/dags/twitter_dag.py
+[2023-01-01T11:55:28.981+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:55:28.981+0700] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-01-01T11:55:29.003+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:55:29.003+0700] {dag.py:3427} INFO - Setting next_dagrun for twitter_dag to 2022-12-30T00:00:00+00:00, run_after=2022-12-31T00:00:00+00:00
+[2023-01-01T11:55:29.030+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/twitter_dag.py took 0.368 seconds

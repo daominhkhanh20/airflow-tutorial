@@ -1,0 +1,12 @@
+[2023-01-01T11:54:41.359+0700] {processor.py:153} INFO - Started process (PID=95796) to work on /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/example_datasets.py
+[2023-01-01T11:54:41.359+0700] {processor.py:743} INFO - Processing file /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/example_datasets.py for tasks to queue
+[2023-01-01T11:54:41.360+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:54:41.360+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/example_datasets.py
+[2023-01-01T11:54:41.376+0700] {processor.py:753} INFO - DAG(s) dict_keys(['dataset_produces_2', 'dataset_produces_1', 'dataset_consumes_unknown_never_scheduled', 'dataset_consumes_1_and_2', 'dataset_consumes_1', 'dataset_consumes_1_never_scheduled']) retrieved from /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/example_datasets.py
+[2023-01-01T11:54:41.588+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:54:41.588+0700] {dag.py:2676} INFO - Sync 6 DAGs
+[2023-01-01T11:54:41.614+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:54:41.614+0700] {dag.py:3427} INFO - Setting next_dagrun for dataset_consumes_1 to None, run_after=None
+[2023-01-01T11:54:41.619+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:54:41.618+0700] {dag.py:3427} INFO - Setting next_dagrun for dataset_consumes_1_and_2 to None, run_after=None
+[2023-01-01T11:54:41.620+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:54:41.620+0700] {dag.py:3427} INFO - Setting next_dagrun for dataset_consumes_1_never_scheduled to None, run_after=None
+[2023-01-01T11:54:41.622+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:54:41.621+0700] {dag.py:3427} INFO - Setting next_dagrun for dataset_consumes_unknown_never_scheduled to None, run_after=None
+[2023-01-01T11:54:41.624+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:54:41.624+0700] {dag.py:3427} INFO - Setting next_dagrun for dataset_produces_1 to 2022-12-31T00:00:00+00:00, run_after=2023-01-01T00:00:00+00:00
+[2023-01-01T11:54:41.625+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:54:41.625+0700] {dag.py:3427} INFO - Setting next_dagrun for dataset_produces_2 to None, run_after=None
+[2023-01-01T11:54:41.668+0700] {processor.py:175} INFO - Processing /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/example_datasets.py took 0.312 seconds

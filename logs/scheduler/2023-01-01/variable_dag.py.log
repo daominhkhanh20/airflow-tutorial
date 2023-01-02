@@ -1,0 +1,14 @@
+[2023-01-01T11:53:44.151+0700] {processor.py:153} INFO - Started process (PID=95409) to work on /home/dmk/airflow/dags/variable_dag.py
+[2023-01-01T11:53:44.153+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/variable_dag.py for tasks to queue
+[2023-01-01T11:53:44.154+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:44.153+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/variable_dag.py
+[2023-01-01T11:53:44.173+0700] {processor.py:753} INFO - DAG(s) dict_keys(['variable_dag']) retrieved from /home/dmk/airflow/dags/variable_dag.py
+[2023-01-01T11:53:44.298+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:44.298+0700] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-01-01T11:53:44.318+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:44.318+0700] {dag.py:3427} INFO - Setting next_dagrun for variable_dag to 2019-02-15T00:00:00+00:00, run_after=2019-02-15T00:00:00+00:00
+[2023-01-01T11:53:44.340+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/variable_dag.py took 0.194 seconds
+[2023-01-01T11:55:25.244+0700] {processor.py:153} INFO - Started process (PID=95946) to work on /home/dmk/airflow/dags/variable_dag.py
+[2023-01-01T11:55:25.245+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/variable_dag.py for tasks to queue
+[2023-01-01T11:55:25.245+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:55:25.245+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/variable_dag.py
+[2023-01-01T11:55:25.262+0700] {processor.py:753} INFO - DAG(s) dict_keys(['variable_dag']) retrieved from /home/dmk/airflow/dags/variable_dag.py
+[2023-01-01T11:55:25.410+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:55:25.409+0700] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-01-01T11:55:25.431+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:55:25.431+0700] {dag.py:3427} INFO - Setting next_dagrun for variable_dag to 2019-02-15T00:00:00+00:00, run_after=2019-02-15T00:00:00+00:00
+[2023-01-01T11:55:25.463+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/variable_dag.py took 0.222 seconds

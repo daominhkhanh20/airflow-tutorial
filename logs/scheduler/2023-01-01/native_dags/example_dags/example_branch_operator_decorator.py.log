@@ -1,0 +1,7 @@
+[2023-01-01T11:54:57.224+0700] {processor.py:153} INFO - Started process (PID=95847) to work on /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2023-01-01T11:54:57.225+0700] {processor.py:743} INFO - Processing file /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/example_branch_operator_decorator.py for tasks to queue
+[2023-01-01T11:54:57.226+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:54:57.226+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2023-01-01T11:54:57.419+0700] {processor.py:753} INFO - DAG(s) dict_keys(['example_branch_python_operator_decorator']) retrieved from /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/example_branch_operator_decorator.py
+[2023-01-01T11:54:57.461+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:54:57.461+0700] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-01-01T11:54:57.630+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:54:57.623+0700] {dag.py:3427} INFO - Setting next_dagrun for example_branch_python_operator_decorator to 2022-12-31T00:00:00+00:00, run_after=2023-01-01T00:00:00+00:00
+[2023-01-01T11:54:57.802+0700] {processor.py:175} INFO - Processing /home/dmk/anaconda3/envs/airflow/lib/python3.7/site-packages/airflow/example_dags/example_branch_operator_decorator.py took 0.580 seconds

@@ -1,0 +1,18 @@
+[2023-01-01T11:53:42.758+0700] {processor.py:153} INFO - Started process (PID=95408) to work on /home/dmk/airflow/dags/run_daily.py
+[2023-01-01T11:53:42.759+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/run_daily.py for tasks to queue
+[2023-01-01T11:53:42.760+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:42.759+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/run_daily.py
+[2023-01-01T11:53:42.775+0700] {processor.py:753} INFO - DAG(s) dict_keys(['run_daily']) retrieved from /home/dmk/airflow/dags/run_daily.py
+[2023-01-01T11:53:42.980+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:42.980+0700] {manager.py:504} INFO - Created Permission View: can delete on DAG:run_daily
+[2023-01-01T11:53:42.992+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:42.991+0700] {manager.py:504} INFO - Created Permission View: can read on DAG:run_daily
+[2023-01-01T11:53:43.001+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:43.000+0700] {manager.py:504} INFO - Created Permission View: can edit on DAG:run_daily
+[2023-01-01T11:53:43.001+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:43.001+0700] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-01-01T11:53:43.012+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:43.012+0700] {dag.py:2697} INFO - Creating ORM DAG for run_daily
+[2023-01-01T11:53:43.023+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:53:43.022+0700] {dag.py:3427} INFO - Setting next_dagrun for run_daily to 2022-12-30T00:00:00+00:00, run_after=2022-12-30T00:02:00+00:00
+[2023-01-01T11:53:43.041+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/run_daily.py took 0.286 seconds
+[2023-01-01T11:55:18.620+0700] {processor.py:153} INFO - Started process (PID=95923) to work on /home/dmk/airflow/dags/run_daily.py
+[2023-01-01T11:55:18.621+0700] {processor.py:743} INFO - Processing file /home/dmk/airflow/dags/run_daily.py for tasks to queue
+[2023-01-01T11:55:18.622+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:55:18.622+0700] {dagbag.py:538} INFO - Filling up the DagBag from /home/dmk/airflow/dags/run_daily.py
+[2023-01-01T11:55:18.649+0700] {processor.py:753} INFO - DAG(s) dict_keys(['run_daily']) retrieved from /home/dmk/airflow/dags/run_daily.py
+[2023-01-01T11:55:18.902+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:55:18.902+0700] {dag.py:2676} INFO - Sync 1 DAGs
+[2023-01-01T11:55:18.953+0700] {logging_mixin.py:137} INFO - [2023-01-01T11:55:18.953+0700] {dag.py:3427} INFO - Setting next_dagrun for run_daily to 2022-12-30T00:16:00+00:00, run_after=2022-12-30T00:18:00+00:00
+[2023-01-01T11:55:19.063+0700] {processor.py:175} INFO - Processing /home/dmk/airflow/dags/run_daily.py took 0.446 seconds
